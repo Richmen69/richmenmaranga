@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com -->
+
   <title>Amore's Handcrafts</title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -31,9 +32,9 @@
     margin-bottom: 30px;
   }  
   .jumbotron {
-    background-color: black;
+    background-color: white;
     color: #fff;
-    padding: 200px 100px;
+    padding: 350px 250px;
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
@@ -188,6 +189,31 @@
       font-size: 150px;
     }
   }
+  .item {
+    width: 100%; /* Set a width for the container */
+}
+
+img {
+    display: block; /* Remove inline spacing */
+    margin: 0 auto; /* Center horizontally */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -200,7 +226,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage">Amore's Handcrafts</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -214,13 +240,8 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h1>Amore's Handcrafts</h1> 
-  <p>Handcrafted with Love</p> 
-  <form>
-    
-    </div>
-  </form>
+<div class="jumbotron text-center" style="background-image: url('logo.png'); background-size: cover; background-position: center;">
+
 </div>
 
 <!-- Container (About Section) -->
@@ -232,6 +253,9 @@
         We believe in the beauty and therapeutic nature of crochet, creating unique and handcrafted items that bring joy and warmth to our customers.
         </h4><br>
     </div>
+    <div class="text-center">
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/6kBJBtY1GgY" title="Midterm Exam Requirements" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <div class="col-sm-4">
     </div>
   </div>
@@ -240,8 +264,8 @@
 <div class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
+      <img src="newpost.png" alt="poster" class="logo slideanim" />
+  </div>
     <div class="col-sm-8">
       <h2>Our Values</h2><br>
       <h4><strong>MISSION:</strong> To inspire and empower individuals to embrace the art of crocheting, fostering creativity, connection, and a sense of accomplishment. We aim to provide high-quality, handcrafted crocheted items that bring joy, warmth, and a touch of handmade love to every life.</h4><br>
@@ -255,42 +279,46 @@
   <h2>SERVICES</h2>
   <h4>Crochet products offer a wide range of possibilities, from cozy home decor to stylish accessories.</h4>
   <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <img src="customs.jpg" alt="Customize Orders" width="200" height="200"/>
-      <h4>Customize Orders</h4>
-  
-    </div>
-    <div class="col-sm-4">
-      <img src="restore.jpg" alt="Repair and Restoration" width="200" height="200"/>
-      <h4>Repair and Restoration</h4>
-      
-    </div>
-    <div class="col-sm-4">
-      <img src="decor.jpg" alt="Home Décor" width="200" height="200"/>
-      <h4>Home Décor</h4>
-      
-    </div>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+  <div class="item active">
+    <img src="customs.jpg" alt="Customize Orders">
+    <p><strong>Customize Orders</strong>
   </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <img src="accesories.jpg" alt="Accessories" width="200" height="200"/>
-      <h4>Accessories</h4>
-      
-    </div>
-    <div class="col-sm-4">
-      <img src="personalized.jpg" alt="Personalized Gifts" width="200" height="200"/>
-      <h4>Personalized Gifts</h4>
-      
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
+  <div class="item">
+    <img src="personalized.jpg" alt="personalized">
+    <p><strong>Personalized</strong>
+  </div>
+  <div class="item">
+    <img src="accesories.jpg" alt="accesories">
+    <p><strong>Accessories</strong>
+  </div>
+  <div class="item">
+    <img src="decor.jpg" alt="Home decor">
+    <p><strong>Home Decor</strong>
   </div>
 </div>
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+
+  
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
@@ -317,16 +345,17 @@
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="bee.jpg" alt="Bee" width="400" height="300">
-        <p><strong>Bee</strong>
+        <img src="handbag.jpg" alt="handbag" width="400" height="300">
+        <p><strong>Handbag</strong>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="shoe.jfif" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+        <img src="pouch.jpg" alt="Pouch" width="400" height="300">
+        <p><strong>Pouch</strong></p>
       </div>
+    
+    
     </div>
   </div><br>
   
@@ -337,18 +366,22 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"I can’t believe how quickly this crochet item arrived! It’s even better in person!"<br><span>Mayumi Teri Pitao</span></h4>
+        <h4>"I can't believe how quickly this crochet item arrived! It's even better in person!"<br><span>Mayumi Teri Pitao</span></h4>
       </div>
       <div class="item">
-        <h4>"I’m in love with this crochet keychain! It’s the perfect little accessory."<br><span>Shiella Mae Labores</span></h4>
+        <h4>"I'm in love with this crochet keychain! It's the perfect little accessory."<br><span>Shiella Mae Labores</span></h4>
       </div>
       <div class="item">
         <h4>"The quality of this crochet bag is amazing! Perfect for everyday use."<br><span>Lovely Lubay</span></h4>
+      </div>
+      <div class="item">
+        <h4>"I'm so impressed with the quality of this piece. It's even better than I expected!"<br><span>Lourene Mae Villa</span></h4>
       </div>
     </div>
     
@@ -385,8 +418,7 @@
           <p><strong>Etc.</p>
         </div>
         <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
+          <h3>₱ 50-200</h3>
         </div>
       </div>      
     </div>     
@@ -398,13 +430,12 @@
         <div class="panel-body">
           <p><strong>Hats for Babies</p>
           <p><strong>Coasters</p>
-          <p><strong>phone Cases</p>
+          <p><strong>Phone Cases</p>
           <p><strong>Small Purses</p>
           <p><strong>Etc.</p>
         </div>
         <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
+          <h3>₱ 100- 500</h3>
         </div>
       </div>      
     </div>       
@@ -421,8 +452,7 @@
           <p><strong>Etc.</p>
         </div>
         <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
+          <h3>₱ 500-1000</h3>
         </div>
       </div>      
     </div>    
@@ -438,17 +468,9 @@
       <p><span class="glyphicon glyphicon-map-marker"></span> Naval</p>
       <p><span class="glyphicon glyphicon-phone"></span> +639755883440</p>
       <p><span class="glyphicon glyphicon-envelope"></span> amoreshandcrafts@gmail.com</p>
+      <p>For more info, please click the button below.</p>
+      <a href="https://ki3nz.github.io/anonymouse/" class="btn btn-primary" role="button" style="background-color: palevioletred; color: white;">Anonymouse</a>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-
       <div class="row">
         <div class="col-sm-12 form-group">
         </div>
@@ -456,16 +478,13 @@
     </div>
   </div>
 </div>
-<div class="text-center">
-  <iframe width="853" height="480" src="https://www.youtube.com/embed/6kBJBtY1GgY" title="Midterm Exam Requirements" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>© 2024 Amore's Handcrafts. All Rights Reserved.</a></p>
-  <p> Richmen Noli A. Maranga</a></p>
+  <p>© 2024 Amore's Handcrafts. All Rights Reserved.</p>
+  <p>Richmen Noli A. Maranga</p>
 </footer>
 
 <script>
